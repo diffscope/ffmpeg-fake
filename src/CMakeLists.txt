@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
 
-project(ffmpeg
+project(ffmpeg-fake
     VERSION 5.0.0.1
     LANGUAGES C ASM
 )
