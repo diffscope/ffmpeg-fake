@@ -1,13 +1,13 @@
-prefix=ffbuild/build
+prefix=ffbuild/debug
 exec_prefix=${prefix}
-libdir=ffbuild/build/lib
-includedir=ffbuild/build/include
+libdir=ffbuild/debug/lib
+includedir=ffbuild/debug/include
 
 Name: libswscale
 Description: FFmpeg image rescaling library
-Version: 6.8.103
+Version: 6.8.112
 Requires: 
-Requires.private: libavutil >= 57.33.101
+Requires.private: libavutil >= 57.40.100
 Conflicts:
 Libs: -L${libdir}  -lswscale 
 Libs.private: 

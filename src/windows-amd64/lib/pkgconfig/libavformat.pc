@@ -1,13 +1,13 @@
-prefix=ffbuild/build
+prefix=ffbuild/release
 exec_prefix=${prefix}
-libdir=ffbuild/build/lib
-includedir=ffbuild/build/include
+libdir=ffbuild/release/lib
+includedir=ffbuild/release/include
 
 Name: libavformat
 Description: FFmpeg container format library
-Version: 59.30.100
+Version: 59.34.101
 Requires: 
-Requires.private: libavcodec >= 59.42.102, libswresample >= 4.8.100, libavutil >= 57.33.101
+Requires.private: libavcodec >= 59.51.101, libswresample >= 4.9.100, libavutil >= 57.40.100
 Conflicts:
 Libs: -L${libdir}  -lavformat 
 Libs.private: secur32.lib ws2_32.lib

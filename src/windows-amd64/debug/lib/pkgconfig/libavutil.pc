@@ -1,11 +1,11 @@
-prefix=ffbuild/build
+prefix=ffbuild/debug
 exec_prefix=${prefix}
-libdir=ffbuild/build/lib
-includedir=ffbuild/build/include
+libdir=ffbuild/debug/lib
+includedir=ffbuild/debug/include
 
 Name: libavutil
 Description: FFmpeg utility library
-Version: 57.33.101
+Version: 57.40.100
 Requires: 
 Requires.private: 
 Conflicts:

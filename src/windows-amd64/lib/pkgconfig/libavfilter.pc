@@ -1,13 +1,13 @@
-prefix=ffbuild/build
+prefix=ffbuild/release
 exec_prefix=${prefix}
-libdir=ffbuild/build/lib
-includedir=ffbuild/build/include
+libdir=ffbuild/release/lib
+includedir=ffbuild/release/include
 
 Name: libavfilter
 Description: FFmpeg audio/video filtering library
-Version: 8.46.103
+Version: 8.49.101
 Requires: 
-Requires.private: libswscale >= 6.8.103, libavformat >= 59.30.100, libavcodec >= 59.42.102, libswresample >= 4.8.100, libavutil >= 57.33.101
+Requires.private: libswscale >= 6.8.112, libavformat >= 59.34.101, libavcodec >= 59.51.101, libswresample >= 4.9.100, libavutil >= 57.40.100
 Conflicts:
 Libs: -L${libdir}  -lavfilter 
 Libs.private: 

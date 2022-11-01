@@ -1,13 +1,13 @@
-prefix=ffbuild/build
+prefix=ffbuild/debug
 exec_prefix=${prefix}
-libdir=ffbuild/build/lib
-includedir=ffbuild/build/include
+libdir=ffbuild/debug/lib
+includedir=ffbuild/debug/include
 
 Name: libavcodec
 Description: FFmpeg codec library
-Version: 59.42.102
+Version: 59.51.101
 Requires: 
-Requires.private: libswresample >= 4.8.100, libavutil >= 57.33.101
+Requires.private: libswresample >= 4.9.100, libavutil >= 57.40.100
 Conflicts:
 Libs: -L${libdir}  -lavcodec 
 Libs.private: mfuuid.lib ole32.lib strmiids.lib ole32.lib user32.lib
