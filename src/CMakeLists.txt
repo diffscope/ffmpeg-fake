@@ -42,8 +42,6 @@ else()
     set(ffmpeg_dir ${CMAKE_CURRENT_SOURCE_DIR}/linux-amd64)
 endif()
 
-configure_file(FFmpegTargets.cmake.in ${CMAKE_CURRENT_BINARY_DIR}/FFmpegTargets.cmake @ONLY)
-
 cmake_path(IS_RELATIVE CMAKE_INSTALL_BINDIR _bin_rel)
 cmake_path(IS_RELATIVE CMAKE_INSTALL_LIBDIR _lib_rel)
 cmake_path(IS_RELATIVE CMAKE_INSTALL_INCLUDEDIR _inc_rel)
@@ -66,6 +64,8 @@ endif()
 
 set(INSTALL_INCDIR ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
 set(INSTALL_CMAKE_DIR ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
+
+configure_file(FFmpegTargets.cmake.in ${CMAKE_CURRENT_BINARY_DIR}/FFmpegTargets.cmake @ONLY)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     install(DIRECTORY ${ffmpeg_dir}/debug/bin/ DESTINATION ${INSTALL_BINDIR})

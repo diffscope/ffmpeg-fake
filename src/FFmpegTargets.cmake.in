@@ -54,9 +54,9 @@ unset(_expectedTargets)
 
 # The installation prefix configured by this project.
 set(_IMPORT_PREFIX @CMAKE_INSTALL_PREFIX@)
-set(_IMPORT_LIBDIR @CMAKE_INSTALL_LIBDIR@)
-set(_IMPORT_BINDIR @CMAKE_INSTALL_BINDIR@)
-set(_IMPORT_INCDIR @CMAKE_INSTALL_INCLUDEDIR@)
+set(_IMPORT_LIBDIR @INSTALL_LIBDIR@)
+set(_IMPORT_BINDIR @INSTALL_BINDIR@)
+set(_IMPORT_INCDIR @INSTALL_INCDIR@)
 
 foreach(_target ${ffmpeg_subprojects})
     add_library(FFmpeg::${_target} SHARED IMPORTED)
