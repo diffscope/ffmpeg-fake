@@ -61,7 +61,7 @@ set(_IMPORT_INCDIR @INSTALL_INCDIR@)
 foreach(_target ${ffmpeg_subprojects})
     add_library(FFmpeg::${_target} SHARED IMPORTED)
     set_target_properties(FFmpeg::${_target} PROPERTIES
-        INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_INCDIR}/FFmpeg"
+        INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_INCDIR}"
     )
 endforeach()
 
