@@ -1,0 +1,14 @@
+prefix=ffbuild/debug
+exec_prefix=${prefix}
+libdir=ffbuild/debug/lib
+includedir=ffbuild/debug/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.39.101
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -latomic -lX11
+Cflags: -I${includedir}

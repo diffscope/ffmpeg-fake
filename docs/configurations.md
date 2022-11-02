@@ -4,12 +4,12 @@
 
 + Debug
 ```sh
-./configure --prefix=ffbuild/debug --enable-pic --enable-shared --disable-optimizations --enable-debug --disable-x86asm --extra-cflags=-g --disable-stripping --disable-doc --enable-runtime-cpudetect--disable-ptx-compression --enable-mediafoundation --disable-vulkan --disable-postproc --toolchain=msvc --arch=x86_64
+./configure --prefix=ffbuild/debug --enable-pic --enable-shared --disable-optimizations --enable-debug --disable-x86asm --extra-cflags=-g --disable-stripping --disable-doc --enable-runtime-cpudetect --disable-ptx-compression --disable-vulkan --disable-postproc --arch=x86_64 --enable-mediafoundation --toolchain=msvc
 ````
 
 + Release
 ```sh
-./configure --prefix=ffbuild/release --enable-pic --enable-shared --enable-asm --enable-x86asm --disable-debug --enable-stripping --disable-doc --enable-runtime-cpudetect --disable-ptx-compression --enable-mediafoundation --disable-vulkan --disable-postproc --toolchain=msvc --arch=x86_64
+./configure --prefix=ffbuild/release --enable-pic --enable-shared --enable-asm --enable-x86asm --disable-debug --enable-stripping --disable-doc --enable-runtime-cpudetect --disable-ptx-compression --disable-vulkan --disable-postproc --arch=x86_64 --enable-mediafoundation --toolchain=msvc
 ````
 
 #  --enable-libmfx 

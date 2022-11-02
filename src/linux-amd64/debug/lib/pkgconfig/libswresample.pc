@@ -1,0 +1,14 @@
+prefix=ffbuild/debug
+exec_prefix=${prefix}
+libdir=ffbuild/debug/lib
+includedir=ffbuild/debug/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.9.100
+Requires: 
+Requires.private: libavutil >= 57.39.101
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
