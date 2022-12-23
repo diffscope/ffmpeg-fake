@@ -1,0 +1,14 @@
+prefix=ffbuild/release
+exec_prefix=${prefix}
+libdir=ffbuild/release/lib
+includedir=ffbuild/release/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.28.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -framework VideoToolbox -L/opt/homebrew/Cellar/libx11/1.8.1/lib -lX11 -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Cflags: -I${includedir}
