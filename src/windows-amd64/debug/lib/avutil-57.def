@@ -16,6 +16,8 @@ EXPORTS
     av_aes_ctr_set_random_iv
     av_aes_init
     av_aes_size
+    av_ambient_viewing_environment_alloc
+    av_ambient_viewing_environment_create_side_data
     av_append_path_component
     av_asprintf
     av_assert0_fpu
@@ -138,6 +140,7 @@ EXPORTS
     av_dict_free
     av_dict_get
     av_dict_get_string
+    av_dict_iterate
     av_dict_parse_string
     av_dict_set
     av_dict_set_int

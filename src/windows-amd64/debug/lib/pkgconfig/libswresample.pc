@@ -7,8 +7,8 @@ Name: libswresample
 Description: FFmpeg audio resampling library
 Version: 4.9.100
 Requires: 
-Requires.private: libavutil >= 57.40.100
+Requires.private: libavutil >= 57.44.100
 Conflicts:
-Libs: -L${libdir}  -lswresample 
+Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lswresample 
 Libs.private: 
 Cflags: -I${includedir}

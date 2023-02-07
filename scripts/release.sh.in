@@ -1,0 +1,1 @@
+--prefix=ffbuild/release --disable-debug --enable-optimizations --enable-stripping --enable-asm

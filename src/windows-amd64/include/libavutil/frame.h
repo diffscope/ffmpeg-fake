@@ -209,6 +209,11 @@ enum AVFrameSideDataType {
      * volume transform - CUVA 005.1-2021.
      */
     AV_FRAME_DATA_DYNAMIC_HDR_VIVID,
+
+    /**
+     * Ambient viewing environment metadata, as defined by H.274.
+     */
+    AV_FRAME_DATA_AMBIENT_VIEWING_ENVIRONMENT,
 };
 
 enum AVActiveFormatDescription {
@@ -486,6 +491,7 @@ typedef struct AVFrame {
      */
     int palette_has_changed;
 
+#if FF_API_REORDERED_OPAQUE
     /**
      * reordered opaque 64 bits (generally an integer or a double precision float
      * PTS but can be anything).
@@ -493,8 +499,12 @@ typedef struct AVFrame {
      * that time,
      * the decoder reorders values as needed and sets AVFrame.reordered_opaque
      * to exactly one of the values provided by the user through AVCodecContext.reordered_opaque
+     *
+     * @deprecated Use AV_CODEC_FLAG_COPY_OPAQUE instead
      */
+    attribute_deprecated
     int64_t reordered_opaque;
+#endif
 
     /**
      * Sample rate of the audio data.

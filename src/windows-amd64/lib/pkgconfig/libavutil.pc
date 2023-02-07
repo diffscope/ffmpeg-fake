@@ -5,10 +5,10 @@ includedir=ffbuild/release/include
 
 Name: libavutil
 Description: FFmpeg utility library
-Version: 57.40.100
+Version: 57.44.100
 Requires: 
 Requires.private: 
 Conflicts:
-Libs: -L${libdir}  -lavutil 
+Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavutil 
 Libs.private: user32.lib bcrypt.lib
 Cflags: -I${includedir}

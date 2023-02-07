@@ -1,0 +1,1 @@
+--prefix=ffbuild/debug --enable-debug --disable-optimizations --disable-stripping --disable-asm --disable-x86asm
