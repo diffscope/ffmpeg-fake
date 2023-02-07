@@ -35,6 +35,8 @@
 + Release
 ````
 
+
+-->
 # FFmpeg with only Audio Decoders
 
 Edited configuration options from [here](https://github.com/mcmtroffaes/ffmpeg-msvc-build/issues/5#issuecomment-817362553).
@@ -46,6 +48,4 @@ Edited configuration options from [here](https://github.com/mcmtroffaes/ffmpeg-m
 
 
 
-
--->
 
