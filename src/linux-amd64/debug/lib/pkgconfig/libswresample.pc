@@ -9,6 +9,6 @@ Version: 4.9.100
 Requires: 
 Requires.private: libavutil >= 57.39.101
 Conflicts:
-Libs: -L${libdir}  -lswresample 
+Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lswresample 
 Libs.private: -lm -latomic
 Cflags: -I${includedir}

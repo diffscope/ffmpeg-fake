@@ -9,6 +9,6 @@ Version: 59.34.101
 Requires: 
 Requires.private: libavcodec >= 59.51.100, libswresample >= 4.9.100, libavutil >= 57.39.101
 Conflicts:
-Libs: -L${libdir}  -lavformat 
+Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavformat 
 Libs.private: -lm -latomic -lz
 Cflags: -I${includedir}

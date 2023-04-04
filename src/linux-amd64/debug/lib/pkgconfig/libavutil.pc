@@ -9,6 +9,6 @@ Version: 57.39.101
 Requires: 
 Requires.private: 
 Conflicts:
-Libs: -L${libdir}  -lavutil 
+Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lavutil 
 Libs.private: -pthread -lm -latomic -lX11
 Cflags: -I${includedir}
