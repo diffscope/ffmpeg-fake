@@ -5,10 +5,10 @@ includedir=ffbuild/release/include
 
 Name: libavcodec
 Description: FFmpeg codec library
-Version: 59.63.100
+Version: 59.37.100
 Requires: 
-Requires.private: libswresample >= 4.9.100, libavutil >= 57.44.100
+Requires.private: libswresample >= 4.7.100, libavutil >= 57.28.100
 Conflicts:
 Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavcodec 
-Libs.private: ole32.lib user32.lib
+Libs.private: mp3lame.lib mfuuid.lib ole32.lib strmiids.lib ole32.lib user32.lib
 Cflags: -I${includedir}

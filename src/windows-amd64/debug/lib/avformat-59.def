@@ -33,8 +33,8 @@ EXPORTS
     av_match_ext
     av_muxer_iterate
     av_new_program
-    av_pkt_dump2
     av_pkt_dump_log2
+    av_pkt_dump2
     av_probe_input_buffer
     av_probe_input_buffer2
     av_probe_input_format
@@ -105,9 +105,9 @@ EXPORTS
     avio_get_str16le
     avio_handshake
     avio_open
-    avio_open2
     avio_open_dir
     avio_open_dyn_buf
+    avio_open2
     avio_pause
     avio_print_string_array
     avio_printf
@@ -147,6 +147,9 @@ EXPORTS
     avpriv_dv_get_packet
     avpriv_dv_init_demux
     avpriv_dv_produce_packet
+    avpriv_mpegts_parse_close
+    avpriv_mpegts_parse_open
+    avpriv_mpegts_parse_packet
     avpriv_new_chapter
     avpriv_register_devices
     avpriv_set_pts_info
