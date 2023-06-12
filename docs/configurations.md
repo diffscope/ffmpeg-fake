@@ -25,16 +25,35 @@
         --enable-x86asm
         ```
 
-+ MacOSX M1
++ macOS
+  
     ```sh
-    --arch=arm64
+    --install-name-dir='@rpath'
     ```
+    
+    + Apple Silicon (arm64)
+    
+      ```sh
+      --arch=arm64
+      ```
+    
+    * Intel (x86_64) Debug
+    
+      ```sh
+      --arch=x86_64
+      ```
+    
+    * Intel (x86_64) Release
+    
+      ```sh
+      --enable-x86asm --arch=x86_64
+      ```
 
 ## Options only for audio
 
 + Common
     ```sh
-    --disable-everything  --enable-demuxer=image2 --enable-demuxer=aac --enable-demuxer=ac3 --enable-demuxer=aiff --enable-demuxer=ape --enable-demuxer=asf --enable-demuxer=au --enable-demuxer=avi --enable-demuxer=flac --enable-demuxer=flv --enable-demuxer=matroska --enable-demuxer=mov --enable-demuxer=m4v --enable-demuxer=mp3 --enable-demuxer='mpc*' --enable-demuxer=ogg --enable-demuxer='pcm*' --enable-demuxer=rm --enable-demuxer=shorten --enable-demuxer=tak --enable-demuxer=tta --enable-demuxer=wav --enable-demuxer=wv --enable-demuxer=xwma --enable-demuxer=dsf --enable-demuxer=dts --enable-demuxer=truehd --enable-decoder='aac*' --enable-decoder=ac3 --enable-decoder=alac --enable-decoder=als --enable-decoder=ape --enable-decoder='atrac*' --enable-decoder=eac3 --enable-decoder=flac --enable-decoder='gsm*' --enable-decoder='mp1*' --enable-decoder='mp2*' --enable-decoder='mp3*' --enable-decoder='mpc*' --enable-decoder=opus --enable-decoder='ra*' --enable-decoder=ralf --enable-decoder=shorten --enable-decoder=tak --enable-decoder=tta --enable-decoder=vorbis --enable-decoder=wavpack --enable-decoder='wma*' --enable-decoder='pcm*' --enable-decoder='dsd*' --enable-decoder=truehd --enable-decoder=mjpeg --enable-parser='aac*' --enable-parser=ac3 --enable-parser=cook --enable-parser=dca --enable-parser=flac --enable-parser=gsm --enable-parser=mpegaudio --enable-parser=tak --enable-parser=vorbis --enable-rpath --enable-pic --enable-shared  --disable-doc --enable-runtime-cpudetect
+    --disable-decoders --enable-decoder='aac*,adpcm*,alac,als,anull,ape,atrac*,eac3,flac,gsm*,mp1*,mp2*,mp3*,mpc*,opus,ra*,ralf,shorten,tak,tta,vorbis,wavpack,wma*,pcm*,dsd*,truehd,mjpeg' --disable-encoders --enable-encoder='aac*,adpcm*,alac,anull,eac3,flac,mp3*,opus,ra*,tta,vorbis,wavpack,wma*,pcm*,truehd,libmp3lame' --enable-libmp3lame --enable-rpath --enable-pic --enable-shared --disable-doc --enable-runtime-cpudetect
     ```
 
 
