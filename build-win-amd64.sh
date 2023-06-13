@@ -8,4 +8,4 @@ echo "./configure $(cat scripts/audio.sh.in) $(cat scripts/debug.sh.in) $(cat sc
 echo "#"
 
 # Configure for release
-echo "./configure $(cat scripts/audio.sh.in)  $(cat scripts/release.sh.in) $(cat scripts/windows.sh.in) --enable-x86asm --arch=$ARCH"
+echo "./configure $(cat scripts/audio.sh.in) $(cat scripts/release.sh.in) $(cat scripts/windows.sh.in) --enable-x86asm --arch=$ARCH"

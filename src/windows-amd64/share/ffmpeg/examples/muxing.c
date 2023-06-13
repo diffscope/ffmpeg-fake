@@ -219,6 +219,8 @@ static AVFrame *alloc_audio_frame(enum AVSampleFormat sample_fmt,
                                   int sample_rate, int nb_samples)
 {
     AVFrame *frame = av_frame_alloc();
+    int ret;
+
     if (!frame) {
         fprintf(stderr, "Error allocating an audio frame\n");
         exit(1);
@@ -230,7 +232,8 @@ static AVFrame *alloc_audio_frame(enum AVSampleFormat sample_fmt,
     frame->nb_samples = nb_samples;
 
     if (nb_samples) {
-        if (av_frame_get_buffer(frame, 0) < 0) {
+        ret = av_frame_get_buffer(frame, 0);
+        if (ret < 0) {
             fprintf(stderr, "Error allocating an audio buffer\n");
             exit(1);
         }

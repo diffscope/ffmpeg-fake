@@ -9,6 +9,6 @@ Version: 59.37.100
 Requires: 
 Requires.private: libswresample >= 4.7.100, libavutil >= 57.28.100
 Conflicts:
-Libs: -L${libdir}  -lavcodec 
-Libs.private: -liconv -lm -framework AudioToolbox -pthread -lz -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavcodec 
+Libs.private: -pthread -liconv -lm -framework AudioToolbox -lmp3lame -lm -framework VideoToolbox -lz -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
 Cflags: -I${includedir}
