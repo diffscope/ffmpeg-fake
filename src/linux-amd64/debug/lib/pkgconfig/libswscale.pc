@@ -10,5 +10,5 @@ Requires:
 Requires.private: libavutil >= 57.28.100
 Conflicts:
 Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lswscale 
-Libs.private: -lm -latomic
+Libs.private: -lm
 Cflags: -I${includedir}

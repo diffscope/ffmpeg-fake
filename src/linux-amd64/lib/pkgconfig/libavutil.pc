@@ -10,5 +10,5 @@ Requires:
 Requires.private: 
 Conflicts:
 Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavutil 
-Libs.private: -pthread -lm -latomic
+Libs.private: -pthread -lm
 Cflags: -I${includedir}

@@ -10,5 +10,5 @@ Requires:
 Requires.private: libswscale >= 6.7.100, libavformat >= 59.27.100, libavcodec >= 59.37.100, libswresample >= 4.7.100, libavutil >= 57.28.100
 Conflicts:
 Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lavfilter 
-Libs.private: -pthread -lm -latomic
+Libs.private: -pthread -lm
 Cflags: -I${includedir}
